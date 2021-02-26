@@ -12,7 +12,7 @@ class MyViewModel : ViewModel() {
 
 
     var edMutableLiveData = MutableLiveData<String>()
-    var textMutableLiveData = MutableLiveData<String>()
+  //  var textMutableLiveData = MutableLiveData<String>()
 
     var finalData = MutableLiveData<MyModel>()
 
@@ -29,7 +29,7 @@ class MyViewModel : ViewModel() {
     {
         var edData = edMutableLiveData.value?.let {
             Log.e("TAG", "onClick: "+it)
-            textMutableLiveData.value=it
+        //    textMutableLiveData.value=it
             MyModel(it)
         }
         finalData.value=edData
