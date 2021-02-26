@@ -2,12 +2,12 @@
 <layout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity">
+    tools:context=".simpleTwoWay.MainActivity">
 
  <data>
      <variable
          name="myModel"
-         type="com.core.allhere.MyViewModel" />
+         type="com.core.allhere.simpleTwoWay.MyViewModel" />
 
  </data>
 
@@ -45,7 +45,11 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/chk" />
 
+
+
+
     <CheckBox
+        android:visibility="gone"
         android:text="kamal"
         android:id="@+id/chk"
         app:layout_constraintTop_toBottomOf="@+id/edText"

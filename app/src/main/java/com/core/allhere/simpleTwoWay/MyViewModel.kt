@@ -1,10 +1,6 @@
-package com.core.allhere
+package com.core.allhere.simpleTwoWay
 
-import android.text.Editable
-import android.text.TextWatcher
 import android.util.Log
-import androidx.databinding.BaseObservable
-import androidx.databinding.Bindable
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
@@ -13,6 +9,10 @@ class MyViewModel : ViewModel() {
 
     var edMutableLiveData = MutableLiveData<String>()
   //  var textMutableLiveData = MutableLiveData<String>()
+
+    init {
+        edMutableLiveData.value="Demo Data"
+    }
 
     var finalData = MutableLiveData<MyModel>()
 
